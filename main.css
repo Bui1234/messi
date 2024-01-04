@@ -1,0 +1,37 @@
+body
+{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    min-height: 100vh;
+    background-color: #06181f;
+}
+svg g path
+{
+    fill: transparent;
+    stroke: 10;
+    stroke: red;
+    stroke-dashoffset: 1680;
+    stroke-dasharray: 1680;
+    animation: load 30s infinite linear;
+}
+@keyframes load 
+{
+    0%
+    {
+           stroke-dashoffset: 1680;
+    }
+    40%
+    {
+        stroke-dashoffset: 1680;
+    }
+    80%
+    {
+        stroke-dashoffset: 3360;
+        fill: transparent;
+    }
+    100%
+    {
+        stroke-dashoffset: 5040;
+    }
+}
